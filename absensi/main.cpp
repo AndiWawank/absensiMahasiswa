@@ -19,12 +19,23 @@ int main(){
     struct{
         char absensi[30][50];
     }kehadiran;
-    int i,menu;
+    int i,menu,pil,menuDet;
     
     printf("\n1. Absensi Mahasiswa");
     printf("\n2. Lihat Data Mahasiswa");
     printf("\nMenu : ");
-    scanf("%d",&menu);
+    scanf("%d",&pil);
+    if(pil == 1){
+        printf("\n1.Jurusan TI");
+        printf("\n2.Jurusan SI");
+        printf("\nMenu Jurusan : ");
+        scanf("%d",&menu);
+    }else if(pil == 2){
+        printf("\n1.Jurusan TI");
+        printf("\n2.Jurusan SI");
+        printf("\nMenu Jurusan : ");
+        scanf("%d",&menuDet);
+    }
     
     switch(menu) {
         case 1:
