@@ -19,8 +19,10 @@ int main(){
     struct{
         char absensi[30][50];
     }kehadiran;
+    char ulang;
     int i,menu,pil,menuDet;
-    
+   
+ do{
     printf("\n1. Absensi Mahasiswa");
     printf("\n2. Lihat Data Mahasiswa");
     printf("\nMenu : ");
@@ -51,8 +53,12 @@ int main(){
                 printf("\n NAMA : %s ",nama[i]);
                 printf("\n NIM : %s ",nim[i]);
                 printf("\n Kehadirannya : %s \n",kehadiran.absensi[i]);
-        
             }
+            printf("KELUAR? Y/N :");
+            scanf("%s",&ulang);
+                if(ulang != 'N' || ulang != 'n'){
+                    return 0;
+                }
             break;
         case 2:
             printf("\n*ABSENSI SISTEM INFORMASI*\n");
@@ -69,6 +75,11 @@ int main(){
 //                 printf("\n Kehadirannya : %s \n",kehadiran.absensi[i]);
         
 //             }
+            printf("KELUAR? Y/N :");
+            scanf("%s",&ulang);
+                if(ulang != 'N' || ulang != 'n'){
+                    return 0;
+                }
             break;
         default:
             break;
@@ -89,8 +100,13 @@ int main(){
 //                printf("\n| Keterangan   : %s",kehadiran.absensi[i]);
                 printf("\n|");
 
-                
+         
             }
+            printf("KELUAR? Y/N :");
+            scanf("%s",&ulang);
+                if(ulang != 'N' || ulang != 'n'){
+                    return 0;
+                }
             break;
         case 2:
             printf("\n*==============DETAIL MAHASISWA SI==============*\n");
@@ -108,10 +124,16 @@ int main(){
 //                }
 //                printf("\n|");
 //            }
+            printf("KELUAR? Y/N :");
+            scanf("%s",&ulang);
+                if(ulang != 'N' || ulang != 'n'){
+                    return 0;
+                }
             break;
         default:
             break;
     }
+  }while(i=0;i<5;i++);
 } //main
 
 
